@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>lux.ai</title>
+  <title>plux.ai</title>
   <script src="https://cdn.tailwindcss.com"></script>
 <script>
     tailwind.config = {
@@ -10,7 +10,6 @@
     }
     // document.body.classList.add("dark");
   </script><link rel="stylesheet" href="./codepen-style.css">
-
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -25,13 +24,22 @@
                 <span class="text-white dark:text-black">ai</span>
             </span>
         </h1>
-        <div class="mt-4">
+        <p class="relative flex items-center text-1xl text-gray-800 dark:text-white dark:opacity-80 transition-colors" style="margin-top:1%; margin-left: 1.5em;">
+          Context aware ecosystem for professional services
+        </p>
+        <!-- <div class="mt-4">
             <button onclick="toggleTheme()" class="px-3 py-1 border border-stone-200 rounded-full drop-shadow-sm text-sm text-stone-800 dark:text-white bg-white/40 dark:bg-black/40 backdrop-blur-lg hover:border-stone-300 transition-colors dark:border-stone-500 dark:hover:border-stone-400">Toggle Theme</button>
+        </div> -->
+        <div  class="relative flex items-center text-1xl text-gray-800 dark:text-white dark:opacity-80 transition-colors" 
+        style="position: absolute; bottom: 1%; left:2%; font-size:13px;line-height:22px;letter-spacing:0px; justify-content: flex-start; color:#8A94A7;">
+        <div style="flex:none;width:100%;display:inline-flex;justify-content:center;font-family: IBM Plex Sans, sans-serif;">
+          &copy; 2024 PLUX AI, Inc. all rights reserved
         </div>
-    </div>
+        </div>
+      </div>
 </main>
 <!-- partial -->
   <script  src="./codepen-script.js"></script>
-
+  <script>document.body.classList.add("dark")</script>
 </body>
 </html>
