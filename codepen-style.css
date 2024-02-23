@@ -90,3 +90,47 @@ body {
 .footer-links li+li{margin-left:24px}@media (min-width: 641px){.site-footer{margin-top:20px}
 .site-footer-inner{justify-content:space-between;padding-top:64px;padding-bottom:64px}
 .footer-brand,.footer-links,.footer-social-links,.footer-copyright{flex:50%}.footer-brand,.footer-copyright{justify-content:flex-start}.footer-links,.footer-social-links{justify-content:flex-end}.footer-links{order:1;margin-bottom:0}}
+
+/* Responsive Design Adjustments */
+
+/* Media Queries for devices with a screen width of 640px or less */
+@media (max-width: 640px) {
+    /* Ensure the main content and footer fit within the viewport without requiring scrolling */
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Distribute space between content and footer */
+        min-height: 100vh; /* Use min-height to ensure content fits within the viewport height */
+        padding: 20px 10px; /* Adjust padding for mobile devices */
+    }
+
+    h1, p {
+        text-align: center; /* Center-align text for a cleaner look */
+        margin: 12px 0; /* Adjust margins to reduce space usage */
+    }
+
+    h1 {
+        font-size: 28px; /* Adjust font size for h1 on smaller screens */
+    }
+
+    p {
+        font-size: 16px; /* Adjust font size for paragraphs on smaller screens */
+    }
+
+    .mt-4 button {
+        padding: 10px 20px; /* Adjust button padding for easier interaction */
+        font-size: 16px; /* Increase font size for better readability */
+    }
+
+    .relative.flex.items-center.text-1xl {
+        flex-direction: row; /* Adjust footer items to be in a row for compact fit */
+        justify-content: center; /* Center footer content */
+        align-items: center; /* Align items for a uniform appearance */
+        font-size: 14px; /* Adjust font size for footer text */
+        padding: 10px 0; /* Add padding to the footer for spacing */
+    }
+
+    .relative.flex.items-center.text-1xl a img {
+        width: 50px; /* Adjust the logo size to fit better */
+    }
+}
